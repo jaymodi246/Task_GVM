@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import Header from './components/Header';
+import HeroSection from './components/Herosection';
+import EssentialTools from './components/EssentialTools';
+import SuccessStory from './components/SuccessStory';
+import QnaSection from './components/QnaSection';
+import HeroSectionphone from './components/Herosectionphone';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+     <Header/>
+     <HeroSection/>
+     <EssentialTools/>
+     <SuccessStory/>
+     <QnaSection/>
+     <HeroSectionphone/>
+     <Footer/>
+    </>
   );
 }
+
 
 export default App;
